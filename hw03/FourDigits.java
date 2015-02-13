@@ -32,7 +32,7 @@ public class FourDigits{
         int xInt=(int) xFindDec;
         //  cut off all digits after the fourth decimal
         
-        //  make xSub an integer to subtract from xInt
+        //  make xSub an integer of 10000 to subtract from xInt
         int xSub=(int) x;
         //  make xDecimal as the four digits
         xDecimal=xInt-(xSub*10000);

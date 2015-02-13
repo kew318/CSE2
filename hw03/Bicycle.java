@@ -1,7 +1,7 @@
 ////////////////////////////////////////
 //Kelly Wu
 //February 7, 2015
-//CSE2 Hw03 Bicycle
+//CSE2 Hw03 P1 Bicycle
 //
 //  write a program practicing inputs and calculations
 //  asks user for counts and seconds
