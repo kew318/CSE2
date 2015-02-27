@@ -51,8 +51,9 @@ public class SpaceExploration {
             
             case 2000:
                 System.out.println("2000: First spacecraft orbits an asteroid");
+                break;
                 
-            //  make sure the years before are not printed    
+            //  make sure the years before are not printed by breaking the switch    
             default:
                 break;
         }
