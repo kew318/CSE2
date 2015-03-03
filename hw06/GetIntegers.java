@@ -43,7 +43,7 @@ public class GetIntegers {
             }
             else {
                 String z = myScanner.next();
-                //  store input so look will keep going
+                //  store input so loop will keep going
                 
                 System.out.println("Invalid input, enter again");    
                 x--;
