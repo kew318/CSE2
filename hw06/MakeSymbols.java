@@ -37,6 +37,6 @@ public class MakeSymbols {
                 System.out.print("&");
                 i++;
             }
-            while(x<0 && i<randInt);
+            while(x>0 && i<randInt);
     }
 }
