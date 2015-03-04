@@ -30,13 +30,13 @@ public class MakeSymbols {
                 System.out.print("*");
                 i++;
             }
-            while(x==0 && i<randInt);
-            
-            //  odd number loop, modd will not be 0
+            while(x == 0 && i<randInt);
+
+            //  odd number loop, mod will be 1
             do{
                 System.out.print("&");
                 i++;
             }
-            while(x>0 && i<randInt);
+            while(x == 1 && i<randInt);
     }
 }
