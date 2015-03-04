@@ -24,19 +24,22 @@ public class MakeSymbols {
         
         //  set counter for loop
         int i=0;
-            
+        
+        if(x==0) {
             //  even number loop, mod will be 0
             do {
                 System.out.print("*");
                 i++;
             }
-            while(x == 0 && i<randInt);
-
+            while(i<randInt);
+        }
+        else {
             //  odd number loop, mod will be 1
             do{
                 System.out.print("&");
                 i++;
             }
-            while(x == 1 && i<randInt);
+            while(i<randInt);
+        }
     }
 }
