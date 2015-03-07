@@ -38,7 +38,7 @@ public class RunFactorial {
                 //  create variable to manipulate for calculating factorial
                     
                     //  test if input is within wanted boundaries
-                    if (x > 9 && x < 16) {
+                    if (x >= 9 && x <= 16) {
                         
                         //  stop the while loop for input from running again
                         a++;
