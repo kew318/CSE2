@@ -10,7 +10,7 @@ import java.util.Scanner;
 import java.util.Random;
 
 //  declare public class
-public class Elimination{
+public class RemoveElements{
     
     //  add method that generates random array
     public static int[] randomInput() {
