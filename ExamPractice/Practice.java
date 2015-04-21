@@ -2,24 +2,50 @@
 import java.util.Scanner;
 
 public class Practice {
-
-    public static String x(int a, String b) {
-        return a+b;
-    }
     
-    public static int sum(int a, int b) {
-        int Sum = 0;
-        for(int i = a; i <= b; i++) {
-            Sum = Sum + i;
+    //  selection sorting
+    public static int[] selection_sort(int[] input) {
+        int i = 0;
+        int j = 0;
+        int min;
+        int index;
+        
+        for(i = 0; i < input.length; i++) {
+            min = input[i];
+            index = i;
+            //  find the smaller member of the array
+            for(j = i; j < input.length; j++) {
+                if(input[j] < min) {
+                    min = input[j];
+                    index = j;
+                }
+            }
+            //  swap
+            int temp = input[i];
+            input[i] = input[index];
+            input[index] = temp;
         }
-        return Sum;
+        return input;
     }
+
     
     public static void main(String[ ] args) {
-        String [] studentIds = new String [3];
-        studentIds[0] = "Alison";
-        studentIds[1] = "Becky";
-        studentIds[2] = "Charlie";
-        System.out.print(studentIds[0]);
+        int[] myArray = new int[5];
+        myArray[0] = 3;
+        myArray[1] = 7;
+        myArray[2] = 6;
+        myArray[3] = 1;
+        myArray[4] = 2;
+        
+        for(int i = 0; i < 5; i++) {
+            System.out.println(myArray[i]);
+        }
+        System.out.println();
+        
+        selection_sort(myArray);
+        
+        for(int i = 0; i < 5; i++) {
+            System.out.println(myArray[i]);
+        }
     }
 }
