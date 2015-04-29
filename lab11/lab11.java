@@ -122,33 +122,16 @@ public class lab11{
             else {
                 lower = mid + 1;
             }
-            
-            //  find numbers closest to input
-            int diff = array2[mid] - input;
-            if(diff < 0) {
-                //  condition means element of array is greater than input
-                above = array2[mid];
-            }
-            else{
-                //  condition means element of array is less than the input
-                below = array2[mid];
-            }
-            
-            //  redefine middle if number is not found
-            mid = (upper + lower)/2;
         }
         
         //  print results
-        if(lower <= upper) {
+        if(low <= high) {
             //  lower will remain less than upper if input is found
-            System.out.println(input+" was found in array2");
+            System.out.println(input+" was found in array");
         }
         else {
             //  lower will become greater than upper if input is not found
-            System.out.println(input+" was not found in array2");
-            System.out.println("The number found below the key was "+below);
-            System.out.println("The number found above the key was "+above);
-            
+            System.out.println(input+" was not found in array");
         }
     }
 }

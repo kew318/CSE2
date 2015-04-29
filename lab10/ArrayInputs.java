@@ -9,6 +9,8 @@
 import java.util.Scanner;
 
 public class ArrayInputs {
+    
+    
     public static int posint (double input) {
         if(input > 0 && (input == Math.floor(input)) && !Double.isInfinite(input)) {
             int x = (int) input;
@@ -29,15 +31,15 @@ public class ArrayInputs {
         int [] arr = new int [sizeAr];
         for(int i = 0; i < sizeAr; i++) {
             System.out.print("Please enter a positive integer: ");
-            if(scan.hasNextInt) {
-               int a = scan.nextInt;
+            if(scan.hasNextInt()) {
+               int a = scan.nextInt();
                a = posint(a);
                arr[i] = a;
             }
             else {
-                
-            }
-            
+                System.out.println("You did not enter an int, try again");
+                String error = scan.next();
+                i--;
             }
         }
         System.out.println("The array is:");
